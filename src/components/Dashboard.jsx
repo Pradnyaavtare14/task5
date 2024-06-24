@@ -4,8 +4,8 @@ import LastActivity from "./LastActivity";
 
 const Dashboard = () => {
   return (
-    <div className="flex-1 bg-background min-h-screen">
-      <div className="flex flex-wrap justify-between items-center mb-8 bg-white pl-6 md:pl-10 pb-2 pt-2 pr-6 md:pr-10 shadow-md">
+    <div className="flex-1 w-full px-4 md:px-8">
+      <div className="flex flex-wrap justify-between items-center mb-8 bg-white p-6 md:p-10 shadow-md">
         <div className="flex items-center mb-4 md:mb-0">
           <h1 className="text-lg md:text-xl font-bold">Dashboard Overview</h1>
         </div>
@@ -18,7 +18,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bg-blue-200 p-4 rounded-lg shadow-md">
           <div className="grid grid-rows-auto min-content">
             <div className="flex items-center">
@@ -62,7 +62,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8 py-4 md:py-8">
+      <div className="py-4 md:py-8">
         <ActivityChart />
         <LastActivity />
       </div>
